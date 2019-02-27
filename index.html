@@ -1,0 +1,90 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Crystal Game</title>
+  
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <body style="background-color: orange">
+  
+    <div class="jumbotron" style="background-color: blue">
+      <h1 style="color:brown"class="text-center">Crystal Game</h1>
+      <p class="a">Each crystal below will boost your # by a secret amount.
+        <br>
+        <b>Warning:</b> The values of the crystals will change at the start of every game
+      </p>
+      <h2 style="color:brown" class="text-center">See if you can reach your goal #</h2>
+    </div>
+  
+    <div class="container">
+  
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card mb-2">
+            <h3 style="text-align: center" class="card-header">Goal #</h3>
+            <div class="card-body text-center">
+              <h1 id="computer-pick"></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card mb-2">
+            <h3 style="text-align: center" class="card-header">Pick a Crystal</h3>
+            <div class="container">
+              <img style="width: 100px;height:100px;" id="button-1" class="btn-danger btn-choice"
+                src="images/Screen_Shot_2018-03-05_at_10.37.19_AM.png"
+                alt="Sapphire">
+              <img style="width: 100px;height:100px;" id="button-2" class="btn-danger btn-choice"
+                src="images/5936761f7a9e0.jpg" alt="Ruby">
+              <img style="width: 100px;height:100px;" id="button-3" class="btn-danger btn-choice"
+                src="images/41532938_050_0.jpg" alt="Amethyst">
+              <img style="width: 100px;height:100px;" id="button-4" class="btn-danger btn-choice"
+                src="images/citrine-heat-treated.jpg" alt="Citrine">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card mb-2">
+            <h3 style="text-align: center" class="card-header">Your # thus far</h3>
+            <div class="card-body text-center">
+              <h1 id="e">0</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+    <div id="game">
+  
+      <p class="a">Wins: <span id="wins">0</span></p>
+      <p class="a">Losses: <span id="losses">0</span> </p>
+  
+      <span id="playerChoice"></span>
+  
+    </div>
+    <script type="text/javascript" src="javascript/game.js"></script>
+  
+  
+  
+  
+  
+  
+  </body>
+  
+  </html>
